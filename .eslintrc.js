@@ -18,11 +18,11 @@ module.exports = {
     'comma-dangle': [
       2,
       {
-        arrays: 'never',
-        objects: 'always',
-        imports: 'never',
-        exports: 'never',
-        functions: 'never',
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'only-multiline',
       },
     ],
     'no-undef': 0,
