@@ -15,7 +15,16 @@ module.exports = {
     'no-console': ['error', { allow: ['log', 'warn'] }],
     'arrow-parens': 0,
     'no-new': 0,
-    'comma-dangle': [2, 'alway'],
+    'comma-dangle': [
+      2,
+      {
+        arrays: 'never',
+        objects: 'always',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never',
+      },
+    ],
     'no-undef': 0,
   },
   parserOptions: {
