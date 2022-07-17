@@ -9,7 +9,8 @@
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish --registry=https://registry.npmjs.com/",
     "preinstall": "npx only-allow pnpm",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "@commitlint/config-conventional": "^17.0.3",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
