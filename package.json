@@ -1,6 +1,9 @@
 {
   "private": true,
   "packageManager": "pnpm@7.3.0",
+  "engines": {
+    "node": ">=14.19.0"
+  },
   "scripts": {
     "build": "pnpm --filter '*' run build",
     "clear": "rimraf 'packages/*/{dist,node_modules}' && rimraf node_modules",
@@ -16,7 +19,6 @@
     "type": "git",
     "url": "git+https://github.com/node-labx/lightning.git"
   },
-  "keywords": [],
   "author": "kk",
   "license": "MIT",
   "bugs": {
@@ -27,9 +29,13 @@
     "@changesets/cli": "^2.23.2",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.20.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
@@ -37,5 +43,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
   }
 }
