@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "pnpm --filter '*' run build",
+    "build:watch": "pnpm --filter '*' run build:watch",
     "clear": "rimraf 'packages/*/{dist,node_modules}' && rimraf node_modules",
     "changeset": "changeset",
     "version-packages": "changeset version",
