@@ -1,0 +1,30 @@
+{
+  "name": "lightning",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-labx/lightning.git"
+  },
+  "keywords": [],
+  "author": "kk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-labx/lightning/issues"
+  },
+  "homepage": "https://github.com/node-labx/lightning#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
