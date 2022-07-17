@@ -1,8 +1,9 @@
 {
-  "name": "lightning",
-  "description": "",
-  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.3.0",
   "scripts": {
+    "build": "pnpm --filter '*' run build",
+    "preinstall": "npx only-allow pnpm",
     "commit": "git-cz"
   },
   "repository": {
@@ -20,7 +21,8 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "typescript": "^4.7.4"
   },
   "config": {
     "commitizen": {
