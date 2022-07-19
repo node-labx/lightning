@@ -3,9 +3,7 @@ import { datetimeFormat, getStackFilePath } from '../../src/util/helper';
 test('# getStackFilePath', () => {
   expect(getStackFilePath() === '-:-').toBeTruthy();
   expect(getStackFilePath(0) === '-:-').toBeTruthy();
-  expect(
-    getStackFilePath(1) === 'packages/lightning-logger/test/util/helper.test.ts:5',
-  ).toBeTruthy();
+  expect(getStackFilePath(1)).toContain('test/util/helper.test.ts');
 });
 
 test('# datetimeFormat', () => {
